@@ -1,0 +1,50 @@
+<div *ngIf="hero">
+  <h2>{{hero.name}} Template</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label>Name:
+      <input class="form-control" 
+       [(ngModel)]="hero.name" />
+    </label>
+  </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content    -->
+  <div class="modal-content">
+    <span class="close" (click)="hideModal()">&times;</span>
+    <textarea class="modalText" [(ngModel)]="hero.final" readonly> </textarea>
+
+  </div>
+</div>
+
+  <div>
+    <label>
+    </label>
+    <textarea class="defaultTextarea" [(ngModel)]="hero.template" placeholder="name"></textarea>
+
+    
+   
+  </div>
+
+  <div class="spacer">
+    &nbsp;
+  </div>
+  <div class="myButtons">
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+  <button (click)="use()">use</button>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  </div>
+</div>
+
+
+<!-- 
+Copyright 2017-2018 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

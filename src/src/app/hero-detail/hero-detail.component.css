@@ -1,0 +1,232 @@
+/* HeroDetailComponent's private CSS styles */
+.spacer
+{
+    width: 100%;
+    height: 95px;
+}
+
+label {
+  display: inline-block;
+  width: 3em;
+  margin: .5em 0;
+  color: #607D8B;
+  font-weight: bold;
+}
+
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+  border: none;
+}
+
+input{
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #eee;
+}
+ 
+input:focus {
+  box-shadow: 0 0 5px rgba( 160, 140, 254, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(160, 140, 254, 1);
+}
+.myButtons{
+  position: relative;
+  top: 330px;
+}
+
+button {
+  
+  transition: all .2s ease-in-out;
+  margin-top: 20px;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+}
+button:hover {
+  color: #9669CE;
+  background-color: #F9F9F9;
+  font-weight: 900;
+  font-size: 1.2em;
+
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+
+textarea.defaultTextarea{
+  border-color: #eee;
+  transition: all .5s ease-in-out;
+  padding-left: .4em;
+  display: block;
+  width: 80%;
+  height: 30em;
+  margin: .5em 0;
+  color: black;
+  font-weight: normal;
+  resize: none;
+}
+
+textarea.defaultTextarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px !important;
+  border: 1px solid #eee;
+  
+  position: absolute ;
+  left: 31px;
+
+  
+  
+
+}
+ 
+textarea.defaultTextarea:focus {
+  width: 80% !important;
+  box-shadow: 0 0 5px rgba( 160, 140, 254, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px !important;
+  border: 1px solid rgba(160, 140, 254, 1);
+ 
+  
+}
+
+/* The Modal (background) */
+texarea.modalText, textarea.modalText:focus{
+  position: absolute !important;
+  right: 20px ;
+  border: none ;
+  box-shadow: white !important;
+  font-family: Cambria !important;
+  margin: auto ;
+  padding: 1.5em !important;
+  outline: none !important;
+
+  width:70% !important;
+  height:30em ;
+ 
+
+}
+
+textarea{
+  right: 20px ;
+  border: none !important;
+  box-shadow: white !important;
+
+  font-family: Cambria;
+  
+  padding: 1em ;
+  outline: none !important;
+  resize: none;
+  width:70%;
+  height:30em ;
+  position: absolute ;
+  right: 20px ;
+  overflow: scroll; 
+  
+
+
+  
+
+}
+textarea:focus{
+  position: absolute ;
+  right: 20px ;
+
+  border: none ;
+  box-shadow: white;
+
+  font-family: Cambria;
+  margin: auto ;
+  padding: 1em ;
+  width:70%;
+  height:30em ;
+  outline: none !important;
+  resize: none;
+  overflow: scroll; 
+
+
+
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    outline: none !important;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 32em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    outline: none !important;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.modal-body {padding: 2px;}
+
+
+/*
+Copyright 2017-2018 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
