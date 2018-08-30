@@ -1,2 +1,2 @@
 # contourApp-angular
-This is an app I am working on using the angular framework
+This is an app for creating and saving templates. I am working on this using the angularJS framework.
